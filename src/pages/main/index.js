@@ -21,7 +21,6 @@ const Main = () => {
       >
         <video
           autoPlay
-          muted
           loop
           id="proposalVideo"
           className="w-full h-full"
