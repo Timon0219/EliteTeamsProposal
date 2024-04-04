@@ -9,9 +9,7 @@ const Form = () => {
     service: "",
     phone: "",
   });
-  const handleSubmit = () => {
-    setFormData({ name: "", email: "", industry: "", service: "", phone: "" });
-  };
+  const handleSubmit = () => {};
   return (
     <div className="flex justify-center w-full h-full px-4 py-4 bg-slate-200">
       <form
@@ -61,7 +59,18 @@ const Form = () => {
           >
             Submit
           </button>
-          <button className="px-6 py-2  font-semibold hover:text-white hover:bg-black rounded-lg duration-200">
+          <button
+            className="px-6 py-2  font-semibold hover:text-white hover:bg-black rounded-lg duration-200"
+            onClick={() =>
+              setFormData({
+                name: "",
+                email: "",
+                industry: "",
+                service: "",
+                phone: "",
+              })
+            }
+          >
             Clear form
           </button>
         </div>
