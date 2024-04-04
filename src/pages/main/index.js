@@ -1,7 +1,5 @@
 import React, { useEffect, useRef } from "react";
 
-import Header from "../../components/header";
-
 import proposalVideo from "../../assets/video/Elite_Teams_proposal.mp4";
 
 const Main = () => {
@@ -13,8 +11,6 @@ const Main = () => {
   }, []);
   return (
     <div>
-      <Header />
-
       <div
         className="relative w-full"
         id="proposalVideoContainer"
