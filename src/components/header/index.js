@@ -1,8 +1,13 @@
+import { useContext } from "react";
 import logo from "../../assets/img/saas-logo.png";
+import { HeaderContext } from "../../context/context";
+
 const Header = () => {
+  const context = useContext(HeaderContext);
   return (
     <header
       id="header"
+      ref={context}
       className="flex justify-between items-center h-16 sm:h-20 xl:h-28 px-2 md:px-6 py-2"
     >
       <div className="h-full">
